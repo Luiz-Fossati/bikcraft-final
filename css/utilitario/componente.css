@@ -1,0 +1,40 @@
+.botao {
+  padding: 16px 32px;
+  background-color: var(--p1);
+  border-radius: 4px;
+  color: var(--p5);
+  font-weight: bold;
+  box-shadow: 4px 4px var(--p3);
+  text-transform: uppercase;
+}
+
+.botao:hover {
+  background-color: var(--p2);
+  box-shadow: 4px 4px var(--p4);
+}
+
+@media (max-width: 1500px) {
+  .botao {
+    font-size: 2rem;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .botao {
+    font-size: 1.75rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .botao {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .botao {
+    font-size: 1.25rem;
+  }
+}
