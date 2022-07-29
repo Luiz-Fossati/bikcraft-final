@@ -1,3 +1,148 @@
-.texto-grande {
-  font-size: 6rem;
+.f-xxl {
+  font: 600 6rem/1.125 Arial, Helvetica, sans-serif;
+}
+
+.f-xl {
+  font: 600 3rem/1.25 Arial, Helvetica, sans-serif;
+}
+
+.f-l-b {
+  font: 600 2.25rem/1.5 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.f-l {
+  font: 500 2.25rem/1.5 Arial, Helvetica, sans-serif;
+}
+
+.f-m-b {
+  font: 600 1.875rem/1.35 Arial, Helvetica, sans-serif;
+}
+
+.f-m {
+  font: 500 1.875rem/1.35 Arial, Helvetica, sans-serif;
+}
+
+.f-s {
+  font: 400 1.5rem/1.5 Arial, Helvetica, sans-serif;
+}
+
+.f-xs {
+  font: 400 1.125rem/1.35 Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1500px) {
+  .f-xxl {
+    font-size: 5rem;
+  }
+  .f-xl {
+    font-size: 2.65rem;
+  }
+  .f-l-b,
+  .f-l {
+    font-size: 2rem;
+  }
+  .f-m-b,
+  .f-m {
+    font-size: 1.75rem;
+  }
+  .f-s {
+    font-size: 1.35rem;
+  }
+  .f-xs {
+    font-size: 1.075rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .f-xxl {
+    font-size: 4.5rem;
+  }
+  .f-xl {
+    font-size: 2.25rem;
+  }
+  .f-l-b,
+  .f-l {
+    font-size: 1.75rem;
+  }
+  .f-m-b,
+  .f-m {
+    font-size: 1.65rem;
+  }
+  .f-s {
+    font-size: 1.2rem;
+  }
+  .f-xs {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .f-xxl {
+    font-size: 4rem;
+  }
+  .f-xl {
+    font-size: 2rem;
+  }
+  .f-l-b,
+  .f-l {
+    font-size: 1.6rem;
+  }
+  .f-m-b,
+  .f-m {
+    font-size: 1.5rem;
+  }
+  .f-s {
+    font-size: 1.1rem;
+  }
+  .f-xs {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .f-xxl {
+    font-size: 3rem;
+  }
+  .f-xl {
+    font-size: 1.8rem;
+  }
+  .f-l-b,
+  .f-l {
+    font-size: 1.45rem;
+  }
+  .f-m-b,
+  .f-m {
+    font-size: 1.25rem;
+  }
+  .f-s {
+    font-size: 1.05rem;
+  }
+  .f-xs {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .f-xxl {
+    font-size: 2.25rem;
+  }
+  .f-xl {
+    font-size: 1.55rem;
+  }
+  .f-l-b,
+  .f-l {
+    font-size: 1.35rem;
+  }
+  .f-m-b,
+  .f-m {
+    font-size: 1.175rem;
+  }
+  .f-s {
+    font-size: 1rem;
+  }
+  .f-xs {
+    font-size: 0.8625rem;
+  }
 }

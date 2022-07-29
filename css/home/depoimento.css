@@ -1,0 +1,78 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--p1);
+  overflow: hidden;
+}
+
+.depoimento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.depoimento-conteudo {
+  padding: 120px 60px 120px 120px;
+  align-self: end;
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px
+    right 40px;
+}
+
+.depoimento-conteudo blockquote {
+  font-style: italic;
+  font-weight: 900;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.depoimento-conteudo blockquote::before,
+.depoimento-conteudo blockquote::after {
+  font-size: 8rem;
+  color: var(--p2);
+  position: absolute;
+}
+
+.depoimento-conteudo blockquote::before {
+  content: "“";
+  left: -75px;
+  top: -75px;
+}
+
+.depoimento-conteudo blockquote::after {
+  content: "”";
+}
+
+@media (max-width: 1200px) {
+  .depoimento-conteudo blockquote::before,
+  .depoimento-conteudo blockquote::after {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .depoimento-conteudo {
+    padding: 60px;
+    justify-self: center;
+  }
+  .depoimento img {
+    max-height: 200px;
+  }
+  .depoimento-conteudo blockquote::before,
+  .depoimento-conteudo blockquote::after {
+    content: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento-conteudo {
+    padding: 30px;
+  }
+  .depoimento-conteudo blockquote {
+    margin-bottom: 20px;
+  }
+}

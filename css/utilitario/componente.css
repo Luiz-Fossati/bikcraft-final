@@ -1,4 +1,13 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1800px;
+  margin: 0px auto;
+  align-items: center;
+  padding: 30px;
+}
+
 .botao {
+  display: inline-block;
   padding: 16px 32px;
   background-color: var(--p1);
   border-radius: 4px;
@@ -6,11 +15,66 @@
   font-weight: bold;
   box-shadow: 4px 4px var(--p3);
   text-transform: uppercase;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
   background-color: var(--p2);
   box-shadow: 4px 4px var(--p4);
+}
+
+.botao.secundario {
+  background-color: var(--c10);
+  color: var(--c2);
+  box-shadow: 4px 4px var(--c9);
+}
+
+.botao.secundario:hover {
+  background-color: var(--c9);
+  box-shadow: 4px 4px var(--c7);
+}
+
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
+.link {
+  display: inline-block;
+  padding: 15px;
+  color: var(--p1);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: var(--c0);
+}
+
+/* titulo interno */
+.titulo-bg {
+  padding: 90px 0px;
+  background-color: var(--c11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
 }
 
 @media (max-width: 1500px) {
@@ -30,6 +94,19 @@
 @media (max-width: 900px) {
   .botao {
     font-size: 1.5rem;
+  }
+  .link {
+    padding: 10px;
+    background-color: var(--c10);
+    border-radius: 4px;
+  }
+  .titulo-bg {
+    padding: 60px 0px;
+  }
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
   }
 }
 
